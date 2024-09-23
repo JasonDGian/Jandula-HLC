@@ -50,4 +50,17 @@ Los identificadores de las variables deben comenzar con una letra (`a-z`, `A-Z`)
 - Uso tipico: bloques de código.
 
 >[!NOTE]
-> En este contexto, un bloque de código se refiere a una sección de código que está delimitada por llaves {}.
+> En este contexto, un bloque de código se refiere a una sección de código que está delimitada por llaves `{` `}`.
+
+## :small_blue_diamond: Hoistin de variables.
+En JavaScript, el hoisting se refiere al comportamiento interno del lenguaje mediante el cual las declaraciones de funciones, variables y clases se mueven al **inicio de su ámbito**, todo antes de la ejecución del código. Esto nos permite utilizar funciones, variables y clases antes de haberlas declarado.
+
+Sin embargo, solo las declaraciones se "hoistean"; **las inicializaciones no se hoistean.**
+
+Por ejemplo:
+```javascript
+console.log(x); // undefined
+var x = 5;
+console.log(x); // 5
+```
+En este caso, la declaración de `x` es hoisteada, pero su inicialización no.
