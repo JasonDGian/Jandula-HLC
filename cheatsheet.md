@@ -140,7 +140,7 @@ let floatStr = "3.14";
 let floatNum = parseFloat(floatStr); // floatNum es 3.14 (tipo Number)
 ```
 
-## :small_blue_diamond:Casteo.
+## :small_blue_diamond: Casteo.
 ```javascript
 let num = 42;
 let str = String(num); // str es "42" (tipo String)
@@ -149,7 +149,8 @@ let floatNum = 3.14;
 let floatStr = floatNum.toString(); // floatStr es "3.14" (tipo String)
 ```
 
-# :pushpin: Operadores de asignación.
+# :pushpin: Operadores.
+## :small_blue_diamond: Operadores de asignación.
 <table>
     <thead>
         <tr>
@@ -202,6 +203,147 @@ let floatStr = floatNum.toString(); // floatStr es "3.14" (tipo String)
             <td><code>x **= 2;</code></td>
             <td><code>x = x ** 2;</code></td>
         </tr>
+    </tbody>
+</table>
+
+
+## :small_blue_diamond: Operadores ed comparación.
+<table>
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>==</td>
+            <td>Igualdad (comparación no estricta)</td>
+            <td><code>5 == '5'</code></td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>===</td>
+            <td>Igualdad estricta (mismo tipo y valor)</td>
+            <td><code>5 === '5'</code></td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>!=</td>
+            <td>Desigualdad (comparación no estricta)</td>
+            <td><code>5 != '6'</code></td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>!==</td>
+            <td>Desigualdad estricta (mismo tipo y valor)</td>
+            <td><code>5 !== '5'</code></td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>Menor que</td>
+            <td><code>5 &lt; 10</code></td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>Mayor que</td>
+            <td><code>10 &gt; 5</code></td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>&lt;=</td>
+            <td>Menor o igual que</td>
+            <td><code>5 &lt;= 5</code></td>
+            <td>true</td>
+        </tr>
+        <tr>
+            <td>&gt;=</td>
+            <td>Mayor o igual que</td>
+            <td><code>10 &gt;= 10</code></td>
+            <td>true</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## :small_blue_diamond: Operadores de aritméticos.
+<table>
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>+</td>
+            <td>Adición</td>
+            <td><code>5 + 3</code></td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>Resta</td>
+            <td><code>5 - 3</code></td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>Multiplicación</td>
+            <td><code>5 * 3</code></td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>/</td>
+            <td>División</td>
+            <td><code>6 / 3</code></td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Módulo (resto de la división)</td>
+            <td><code>5 % 3</code></td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>**</td>
+            <td>Potencia</td>
+            <td><code>2 ** 3</code></td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>++</td>
+            <td>Incremento</td>
+            <td><code>let x = 5; x++;</code></td>
+            <td>6 (después del incremento)</td>
+        </tr>
+        <tr>
+            <td>--</td>
+            <td>Decremento</td>
+            <td><code>let x = 5; x--;</code></td>
+            <td>4 (después del decremento)</td>
+        </tr>
+    </tbody>
+</table>
+
+
+## :small_blue_diamond: Operadores de asignación aritméticos (bit a bit).
+<table>
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Equivalente</th>
+        </tr>
+    </thead>
+    <tbody>
         <tr>
             <td>&=</td>
             <td>AND bit a bit y asigna</td>
@@ -241,3 +383,10 @@ let floatStr = floatNum.toString(); // floatStr es "3.14" (tipo String)
     </tbody>
 </table>
 
+
+## :small_blue_diamond: Operador de concatenación.
+El operador de concatenación es el simbolo `+`.
+Ejemplo:
+```javascript
+console.log("mi" + " " + "string"); // -> "mi string"
+```
