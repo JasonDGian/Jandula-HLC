@@ -130,4 +130,114 @@ Los identificadores de las variables deben comenzar con una letra (`a-z`, `A-Z`)
 >[!CAUTION]
 > Javascript es **case-sensitive**. Esto significa que "null", "Null" y "NULL" no hacen referencia al mismo elemento. El nombre correcto es `null`.
 
-# :pushpin: Tipos de datos.
+# :pushpin: Casteo y parsing.
+## :small_blue_diamond:Parseo.
+```javascript
+let numStr = "42";
+let num = parseInt(numStr); // num es 42 (tipo Number)
+
+let floatStr = "3.14";
+let floatNum = parseFloat(floatStr); // floatNum es 3.14 (tipo Number)
+```
+
+## :small_blue_diamond:Casteo.
+```javascript
+let num = 42;
+let str = String(num); // str es "42" (tipo String)
+
+let floatNum = 3.14;
+let floatStr = floatNum.toString(); // floatStr es "3.14" (tipo String)
+```
+
+# :pushpin: Operadores de asignación.
+<table>
+    <thead>
+        <tr>
+            <th>Operador</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Equivalente</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>=</td>
+            <td>Asigna el valor a la variable</td>
+            <td><code>x = 5;</code></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>+=</td>
+            <td>Suma y asigna</td>
+            <td><code>x += 2;</code></td>
+            <td><code>x = x + 2;</code></td>
+        </tr>
+        <tr>
+            <td>-=</td>
+            <td>Resta y asigna</td>
+            <td><code>x -= 3;</code></td>
+            <td><code>x = x - 3;</code></td>
+        </tr>
+        <tr>
+            <td>*=</td>
+            <td>Multiplica y asigna</td>
+            <td><code>x *= 4;</code></td>
+            <td><code>x = x * 4;</code></td>
+        </tr>
+        <tr>
+            <td>/=</td>
+            <td>Divide y asigna</td>
+            <td><code>x /= 2;</code></td>
+            <td><code>x = x / 2;</code></td>
+        </tr>
+        <tr>
+            <td>%=</td>
+            <td>Módulo y asigna</td>
+            <td><code>x %= 3;</code></td>
+            <td><code>x = x % 3;</code></td>
+        </tr>
+        <tr>
+            <td>**=</td>
+            <td>Potencia y asigna</td>
+            <td><code>x **= 2;</code></td>
+            <td><code>x = x ** 2;</code></td>
+        </tr>
+        <tr>
+            <td>&=</td>
+            <td>AND bit a bit y asigna</td>
+            <td><code>x &= 1;</code></td>
+            <td><code>x = x & 1;</code></td>
+        </tr>
+        <tr>
+            <td>|=</td>
+            <td>OR bit a bit y asigna</td>
+            <td><code>x |= 1;</code></td>
+            <td><code>x = x | 1;</code></td>
+        </tr>
+        <tr>
+            <td>^=</td>
+            <td>XOR bit a bit y asigna</td>
+            <td><code>x ^= 1;</code></td>
+            <td><code>x = x ^ 1;</code></td>
+        </tr>
+        <tr>
+            <td><<=</td>
+            <td>Desplazamiento a la izquierda y asigna</td>
+            <td><code>x <<= 2;</code></td>
+            <td><code>x = x << 2;</code></td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Desplazamiento a la derecha y asigna</td>
+            <td><code>x >>= 2;</code></td>
+            <td><code>x = x >> 2;</code></td>
+        </tr>
+        <tr>
+            <td>>> =</td>
+            <td>Desplazamiento a la derecha sin signo y asigna</td>
+            <td><code>x >>>= 2;</code></td>
+            <td><code>x = x >>> 2;</code></td>
+        </tr>
+    </tbody>
+</table>
+
