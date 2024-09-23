@@ -167,7 +167,7 @@ var ejemplo = "Hola mundo";
 ```
 **Al ser un lenguaje de tipo dinámico (poco tipado) esta nueva asignación a distinto tipo no provoca un mensaje de error.**
 
-## :small_blue_diamond:Parseo.
+## :small_blue_diamond: Parseo.
 ```javascript
 let numStr = "42";
 let num = parseInt(numStr); // num es 42 (tipo Number)
@@ -184,3 +184,15 @@ let str = String(num); // str es "42" (tipo String)
 let floatNum = 3.14;
 let floatStr = floatNum.toString(); // floatStr es "3.14" (tipo String)
 ```
+
+## :small_blue_diamond: Sentencias condicionales.
+Javascript reconoce las sentencias condicionales IF-ELSE IF-ELSE y SWITCH. 
+Para los tests de las condiciones siempre se utiliza el control de condición verdadera.
+
+### :white_small_square: Valores que evaluan a FALSO.
+- false
+- undefined
+- null
+- 0
+- NaN
+- "" (cadena vacía)

@@ -416,3 +416,16 @@ let resultado = (x > 10)
 
 console.log(resultado); // "Entre 11 y 20"
 ```
+
+## :small_blue_diamond: Sentencia IF.
+Tomando el ejemplo, `condicion1` será la primera en evaluarse; si es cierta, se ejecutará su bloque de código. Si es falsa, se evaluarán las subsecuentes condiciones. Esto permite **encadenar tests** de condiciones a modo de filtro agregativo.
+
+```javascript
+if (condicion1){
+
+} else if (condicion2) {
+
+} else {
+
+}
+```
