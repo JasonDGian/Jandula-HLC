@@ -126,6 +126,7 @@ Los identificadores de las variables deben comenzar con una letra (`a-z`, `A-Z`)
         </tr>
     </tbody>
 </table>
+   
 >[!CAUTION]
 > Javascript es **case-sensitive**. Esto significa que "null", "Null" y "NULL" no hacen referencia al mismo elemento. El nombre correcto es `null`.
 
