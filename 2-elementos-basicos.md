@@ -196,3 +196,6 @@ Para los tests de las condiciones siempre se utiliza el control de condición ve
 - 0
 - NaN
 - "" (cadena vacía)
+
+Es importante hacer uso correcto de los valores a falso, ya que sabiendo esto reconoceremos, por ejemplo, que un test aplicado a un objeto devolverá `TRUE` si ha sido instanciado y `FALSE` si es nulo (no ha sido instanciado).
+

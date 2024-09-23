@@ -421,11 +421,50 @@ console.log(resultado); // "Entre 11 y 20"
 Tomando el ejemplo, `condicion1` será la primera en evaluarse; si es cierta, se ejecutará su bloque de código. Si es falsa, se evaluarán las subsecuentes condiciones. Esto permite **encadenar tests** de condiciones a modo de filtro agregativo.
 
 ```javascript
-if (condicion1){
-
+if (condicion1) {
+    // Código a ejecutar si condicion1 es verdadera
 } else if (condicion2) {
-
+    // Código a ejecutar si condicion1 es falsa y condicion2 es verdadera
 } else {
-
+    // Código a ejecutar si ninguna de las condiciones anteriores es verdadera
 }
+
+```
+
+
+## :small_blue_diamond: Sentencia SWITCH.
+
+```javascript
+switch (expresión) {
+    case valor1:
+        // Código a ejecutar si expresión === valor1
+        break;
+    case valor2:
+        // Código a ejecutar si expresión === valor2
+        break;
+    // Puedes agregar más casos aquí
+    default:
+        // Código a ejecutar si no coincide con ningún caso
+}
+```
+
+**Ejemplo:**
+```javascript
+let fruta = "manzana";
+
+switch (fruta) {
+    case "banana":
+        console.log("Es una banana.");
+        break;
+    case "manzana":
+        console.log("Es una manzana.");
+        break;
+    case "naranja":
+        console.log("Es una naranja.");
+        break;
+    default:
+        console.log("Fruta no reconocida.");
+}
+
+// Salida: "Es una manzana."
 ```
