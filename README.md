@@ -2,10 +2,7 @@
 Javascript es un lenguaje nacido para aumentar la capacidad de interacción y funcionalidades de las paginas web. Se escribe directamente en HTML y se ejcuta automaticamentea medida que la página va cargando las instrucciones.
 - Es un lenguaje interpretado.
 - Se puede ejecutar en cualquier tipo de dispositivo provisto de "motor" o interprete.
-- Los navegadores disponen de motores "embedidos" para ejecutar JS llamado una “Máquina virtual de JavaScript”.
-    - Chrome :
-     
-- 
+
 
 ## :small_blue_diamond: Acerca de los motores de Javascript.
 Los fundamentos de funcionamiento de un motor de Javascript son los siguientes.
