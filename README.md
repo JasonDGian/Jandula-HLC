@@ -73,13 +73,13 @@ El JavaScript moderno es un lenguaje "seguro" que no permite acceso directo a pa
 3. **APIs del navegador**: Funciones como almacenamiento local, cookies, y AJAX para realizar solicitudes de red.
 4. **Estilos CSS**: Modificar y aplicar estilos a los elementos de la página.
 
-## Que diferencia a Javascript.
+## :small_blue_diamond: Que diferencia a Javascript.
 JavaScript es la única tecnología de los navegadores que presenta la combinación de estas tres características.
 1. Completa integración con HTML y CSS.
 2. Las cosas simples se hacen de manera simple.
 3. Soportado por la mayoría de los navegadores y habilitado de forma predeterminada.
 
-## Lenguajes basados en Javascript.
+## :small_blue_diamond: Lenguajes basados en Javascript.
 Al igual que ocurre con muchos lenguajes, Javascript ha sido adaptado a distintas ramas de desarrollo para satisfacer demandas para las que en su forma base no era optimo.
 
 <table>
@@ -118,7 +118,7 @@ Al igual que ocurre con muchos lenguajes, Javascript ha sido adaptado a distinta
 </table>
 
 
-## Costumbre arcaicas.
+## :small_blue_diamond: Costumbre arcaicas.
 Con versiones anteriores de HTML se debia especificar ciertos atributos para la etiqueta Script como lo son el atributo `language=...` y el atributo `type=...`. Hoy en dia esto está en desuso y es bandera de código arcaico. De misma naturaleza son los 'comentarios' de ocultación de instrucciones.
 
 **Ejemplos de codigo anticuado:**
