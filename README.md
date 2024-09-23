@@ -1,5 +1,6 @@
 # :pushpin: Introducción a Javascript.
 Javascript es un lenguaje nacido para aumentar la capacidad de interacción y funcionalidades de las paginas web. Se escribe directamente en HTML y se ejcuta automaticamentea medida que la página va cargando las instrucciones.
+- Es un lenguaje 'poco tipado'.
 - Es un lenguaje interpretado.
 - Es un lenguaje multiplataforma.
 - Se puede ejecutar en cualquier tipo de dispositivo provisto de "motor" o interprete.

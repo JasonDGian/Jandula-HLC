@@ -63,3 +63,70 @@ Los identificadores de las variables deben comenzar con una letra (`a-z`, `A-Z`)
 
 >[!NOTE]
 > En este contexto, un bloque de código se refiere a una sección de código que está delimitada por llaves `{` `}`.
+
+# :pushpin: Tipos de datos.
+<table>
+    <thead>
+        <tr>
+            <th>Tipo de Dato</th>
+            <th>Descripción</th>
+            <th>Ejemplo de Declaración</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Number</td>
+            <td>Representa números (enteros y decimales).</td>
+            <td><code>let num = 42;</code></td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>Representa cadenas de texto.</td>
+            <td><code>let str = "Hola";</code></td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>Representa valores de verdad: <code>true</code> o <code>false</code>.</td>
+            <td><code>let isTrue = true;</code></td>
+        </tr>
+        <tr>
+            <td>Object</td>
+            <td>Colecciones de pares clave-valor.</td>
+            <td><code>let obj = { clave: "valor" };</code></td>
+        </tr>
+        <tr>
+            <td>Array</td>
+            <td>Colección ordenada de elementos.</td>
+            <td><code>let arr = [1, 2, 3];</code></td>
+        </tr>
+        <tr>
+            <td>Function</td>
+            <td>Bloque de código reutilizable.</td>
+            <td><code>function myFunc() { }</code></td>
+        </tr>
+        <tr>
+            <td>Null</td>
+            <td>Representa la ausencia intencional de valor.</td>
+            <td><code>let value = null;</code></td>
+        </tr>
+        <tr>
+            <td>Undefined</td>
+            <td>Indica que una variable no ha sido inicializada.</td>
+            <td><code>let value;</code></td>
+        </tr>
+        <tr>
+            <td>Symbol</td>
+            <td>Representa un valor único e inmutable.</td>
+            <td><code>let sym = Symbol("desc");</code></td>
+        </tr>
+        <tr>
+            <td>BigInt</td>
+            <td>Permite representar números enteros grandes.</td>
+            <td><code>let bigInt = 1234567890123456789012345678901234567890n;</code></td>
+        </tr>
+    </tbody>
+</table>
+>[!CAUTION]
+> Javascript es **case-sensitive**. Esto significa que "null", "Null" y "NULL" no hacen referencia al mismo elemento. El nombre correcto es `null`.
+
+# :pushpin: Tipos de datos.
