@@ -26,19 +26,25 @@ TL:DR; Cuando las instrucciones son pocas y sencillas podemos almacenarlas direc
 > Una etiqueta `<script>` **NO PUEDE** especificar una ruta, y a la vez, contener instrucciones. 
 
 
-## Costumbre arcaicas.
-Con versiones anteriores de HTML se debia especificar ciertos atributos para la etiqueta Script como lo son el atributo `language=...` y el atributo `type=...`. Hoy en dia esto está en desuso y es bandera de código arcaico. De misma naturaleza son los 'comentarios' de ocultación de instrucciones.
+## Estructura del cógido.
+En esta sección veremos los bloques de construcción de Javascript.
 
-**Ejemplos de codigo anticuado:**
+### Sentencias.
+Podemos tener tantas sentencias en nuestro código como queramos, las cuales se pueden
+separar con un punto y coma.
+Por ejemplo, aquí separamos “Hello World” en dos alerts:
 ```html
-<script type=...></script>
-
-<script language=...></script>
-
-<script type="text/javascript"><!--
-...
-instrucciones
-...
-//--></script>
+alert('Hola'); 
+alert('Mundo');
 ```
 
+### Punto y coma.
+El punto y coma es el simbolo delimitador de la instrucción. Se puede omitir un punto y coma en la mayoría de los casos cuando existe un salto de línea.
+Esto también funcionaría:
+```html
+alert('Hola') 
+alert('Mundo')
+```
+
+>[!CAUTION]
+> Esto se llama "Implicit Semi-colon" pero no siempre funciona. 

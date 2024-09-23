@@ -117,3 +117,19 @@ Al igual que ocurre con muchos lenguajes, Javascript ha sido adaptado a distinta
     </tr>
 </table>
 
+
+## Costumbre arcaicas.
+Con versiones anteriores de HTML se debia especificar ciertos atributos para la etiqueta Script como lo son el atributo `language=...` y el atributo `type=...`. Hoy en dia esto está en desuso y es bandera de código arcaico. De misma naturaleza son los 'comentarios' de ocultación de instrucciones.
+
+**Ejemplos de codigo anticuado:**
+```html
+<script type=...></script>
+
+<script language=...></script>
+
+<script type="text/javascript"><!--
+...
+instrucciones
+...
+//--></script>
+```
