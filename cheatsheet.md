@@ -207,7 +207,7 @@ let floatStr = floatNum.toString(); // floatStr es "3.14" (tipo String)
 </table>
 
 
-## :small_blue_diamond: Operadores ed comparación.
+## :small_blue_diamond: Operadores de comparación.
 <table>
     <thead>
         <tr>
@@ -389,4 +389,30 @@ El operador de concatenación es el simbolo `+`.
 Ejemplo:
 ```javascript
 console.log("mi" + " " + "string"); // -> "mi string"
+```
+
+# :pushpin: Sentencias condicionales.
+
+## :small_blue_diamond: Operador ternario.
+Un operador ternario es como un "If" simplificado.
+
+```javascript
+condición ? valorSiTrue : valorSiFalse;
+```
+
+Se pueden anidar.
+
+```javascript
+condición ? valorSiTrue : (condición ? valorSiTrue : valorSiFalse);
+```
+**Ejemplo**
+En este caso, primero se evalúa si x es mayor que 10. Si es verdadero, se evalúa la segunda condición para determinar si es mayor que 20. De lo contrario, devuelve "10 o menos".
+```javascript
+let x = 15;
+
+let resultado = (x > 10) 
+    ? (x > 20 ? "Mayor que 20" : "Entre 11 y 20") 
+    : "10 o menos";
+
+console.log(resultado); // "Entre 11 y 20"
 ```

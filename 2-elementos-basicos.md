@@ -167,7 +167,20 @@ var ejemplo = "Hola mundo";
 ```
 **Al ser un lenguaje de tipo dinámico (poco tipado) esta nueva asignación a distinto tipo no provoca un mensaje de error.**
 
+## :small_blue_diamond:Parseo.
+```javascript
+let numStr = "42";
+let num = parseInt(numStr); // num es 42 (tipo Number)
 
-## :small_blue_diamond: Conversión y parseo.
-parseInt()
-parseFloat()
+let floatStr = "3.14";
+let floatNum = parseFloat(floatStr); // floatNum es 3.14 (tipo Number)
+```
+
+## :small_blue_diamond: Casteo.
+```javascript
+let num = 42;
+let str = String(num); // str es "42" (tipo String)
+
+let floatNum = 3.14;
+let floatStr = floatNum.toString(); // floatStr es "3.14" (tipo String)
+```
