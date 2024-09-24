@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        /* 
+        "Undefined" es el tipo de dato que se asigna a las variables que han sido declaradas, 
+        pero que aún no han sido inicializadas. 
+
+        Este estado de 'undefined' está directamente relacionado con el hoisting de variables.
+        */
+
+        let variable; // Variable no inicializada.
+
+        console.log(variable); // dará "Undefined"
+
+        let variableNula = null; // Variable 'inicializada' a nulo.
+
+        console.log(variableNula); // dará "null"
+
+        // Devuelve TRUE
+        console.log(variable==variableNula); // Se consideran iguales no estrictas, aunque...
+
+        // Devuelve FALSE
+        console.log(variable===variableNula); // Curiosamente no son el mismo tipo 'estricto' de dato.
+
+        // Diferencias generales:  null = vacio intencional  |  undefined = asignación no procesada aún.
+
+
+    </script>
+
+</head>
+<body>
+    <p>6. Determina el tipo de dato de null y undefined. Explicando sus resultados.</p>
+</body>
+</html>
