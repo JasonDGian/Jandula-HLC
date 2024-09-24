@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        var numeros = [1,2,5];
+        
+        // Sin valor inicial el primer elemento del array se convierte en la base de calculo.
+        var sinValorInicial = numeros.reduce( (a, b) => a*b );
+
+        // Al incluir un valor inicial este se toma como base para el primer calculo, funge de acumulador.
+        var connValorInicial = numeros.reduce( (a, b) => a*b, 10 ); 
+
+        
+        console.log(sinValorInicial);  // dará 10
+        console.log(connValorInicial); // dará 100
+
+    </script>
+
+</head>
+<body>
+    <p>33. Explica el papel del valor inicial en reduce().</p>
+</body>
+</html>
