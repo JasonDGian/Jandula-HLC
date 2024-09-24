@@ -527,32 +527,31 @@ var persona = new Array("Edad", "Altura", false);
 
 ```
 
-## Leer a datos en array.
+## :small_blue_diamond: Leer a datos en array.
 ```javascript
 persona[1] // devuelve el elemento en index 1 (segunda poscion)
 ```
 
-## Añadir elemento al array : Insertar al final.
+## :small_blue_diamond: Añadir elemento al array : Insertar al final.
 ```javascript
 persona.push("valor1","valor2","valor3"...);
 ```
 
-## Añadir elemento al array : Insertar al inicio.
+## :small_blue_diamond: Añadir elemento al array : Insertar al inicio.
 ```javascript
 persona.unshift("valor1","valor2","valor3"...);
 ```
-
-## Eliminar ultimo elemento.
+## :small_blue_diamond: Eliminar ultimo elemento.
 ```javascript
 persona.pop();
 ```
 
-## Consultar longitud array.
+## :small_blue_diamond: Consultar longitud array.
 ```javascript
 persona.length;
 ```
 
-## Filtrar array (generar nuevo array filtrado) - myArray.filter()
+## :small_blue_diamond: Filtrar array (generar nuevo array filtrado) - myArray.filter()
 
 **Función callback:** La función callback es una función que se pasa como argumento a otra función.
 - Por cada elemento que la función callback analiza, debe devolver un resultado true o false.
@@ -583,7 +582,7 @@ const nuevoLetras = letras.filter(
 );
 ```
 
-## Mapear array - myArray.map()
+## :small_blue_diamond: Mapear array - myArray.map()
 El método `.map()` en JavaScript se utiliza para crear un nuevo array a partir de un array existente, aplicando una función a cada uno de sus elementos. La función que se pasa como argumento se ejecuta para cada elemento del array original, y el resultado de esa función se agrega al nuevo array.
 
 **Características del método `.map()`:**
@@ -596,3 +595,27 @@ const nuevoArray = arrayOriginal.map((elemento, indice, array) => {
     // lógica para transformar el elemento
 });
 ```
+
+# 📌 Objetos.
+Para crear objetos en Javascript hay dos formas.
+**Objetos vacios o con valores por defecto.**
+```javascript
+var objeto = new Object();
+```
+
+```javascript
+var objeto = {}
+```
+
+**Asignar valores**
+```javascript
+objeto.propiedad = "valor";
+```
+**Objeto literal**
+```javascript
+var objeto = {
+    nombre:"nombre"
+    apellido:"apellido"
+}
+```
+
