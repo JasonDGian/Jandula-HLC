@@ -491,11 +491,26 @@ Se repite hasta que la condición especificada sea falsa, **con una entrada a ej
 Este bucle consulta el estado de la condición solo después de la primera iteración.
 ```javascript
 do {
-
+// Instrucciones.
+// Modificador de condición.
 } while (condición);
 ```
 
 
+# 📌 Funciones.
+Una nota importante acerca de las funciones es que sus **argumentos se pasan por valor**.
+En las funciones de Javascript :
+- No se definen tipos para los paramteros.
+- No se realiza control de tipo parametros.
+- No se realiza control de numero de parametros.
 
+  
+```javascript
+function nombreFuncion (arg1 , arg2){
+// Instrucciones
+return valorRetornado;
+}
+```
 
-
+# 📌 Arrays
+Los 
