@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        console.log(variable);
+        console.log(variableDeBloque);
+        console.log(constanteDeBloque);
+
+        // Este tipo de variable se suele utilizar en ambitos de funciones.
+        var variable = "Variable de ambito de función.";
+
+        // Este tipo de variable se utiliza en un ambito de bloque.
+        let variableDeBloque = "Variable de bloque.";
+
+        // Este tipo de constante se utiliza en ambito de bloque.
+        const constanteDeBloque = "Constante de bloque.";
+
+        /*
+        A diferencia de let y const, las variables declaradas con var son 'izadas' al principio de su función contenedora o
+         del ámbito global. Esto significa que están "disponibles" desde el comienzo de ese ámbito, pero su valor 
+         será 'undefined' hasta que se ejecute el código donde se les asigna un valor.
+        */
+
+
+    </script>
+</head>
+<body>
+    <p>3 - Declara una variable usando var y asígnale un valor. Otra de tipo let y otra const,
+        asignándole valor a cada una. Describe la diferencia en el hoisting entre var, let y
+        const.</p>
+</body>
+</html>

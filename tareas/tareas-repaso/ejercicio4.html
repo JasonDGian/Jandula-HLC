@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function ambito(){
+            var mensajeAmbitoLocal = "Esto es el ambito local.";
+            let mensajeAmbitoBloque = "Esto tampoco deberia funcionar.";
+            console.log(mensajeAmbitoLocal);
+        }
+
+        // console.log(mensajeAmbitoLocal); // Esto provocará error porque la variable var no será accecsible.
+        console.log(mensajeAmbitoBloque); // Esto provocará el mismo error.
+
+        ambito();
+
+
+    </script>
+</head>
+<body>
+    <p>4. Escribe una función que demuestre el ámbito local.</p>
+</body>
+</html>

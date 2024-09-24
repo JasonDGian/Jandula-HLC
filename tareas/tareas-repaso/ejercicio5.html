@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var variable = "Soy Global";
+
+        function imprimir(){
+
+            var variable = "Soy local";
+
+            console.log(variable);
+
+        }
+
+        imprimir();
+
+        /* 
+        Conculsión: Dentro de la función o bloque donde se declara la variable local, 
+        esta toma precedencia, "eclipsa", la variable global homónima.
+        */
+
+    </script>
+
+</head>
+<body>
+    <p> 5. Explica qué sucede cuando una variable global y local tienen el mismo nombre. </p>
+</body>
+</html>
