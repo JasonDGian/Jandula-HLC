@@ -643,7 +643,7 @@ function ConstructorNombre(param1, param2) {
 ```
 
 # 📌 Clases.
-
+```javascript
 class Coche {
     constructor(marca, modelo, anio) {
         this.marca = marca;
@@ -655,7 +655,7 @@ class Coche {
         return `Este coche es un ${this.anio} ${this.marca} ${this.modelo}.`;
     }
 }
-
+```
 
 ## :small_blue_diamond: Extendes - Herencia de clases.
 La palabra extens es usada en declaraciones o epresiones de clase para crear una flase hija.
