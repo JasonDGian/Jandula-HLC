@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        class Persona {
+            constructor( nombre, edad ){
+                this.nombre=nombre;
+                this.edad=edad;
+            }
+        }
+
+        var p1 = new Persona();
+
+        p1.nombre = "Jesus";
+        p1["edad"] = 20; // Importante no olvidar las comillas al referirse al nombre del campo.
+
+        console.log(p1);
+
+    </script>
+
+</head>
+<body>
+    <p>38. Accede a la propiedad de un objeto usando notación de punto y corchetes, actualizando en cada caso una propiedad del objeto.</p>
+</body>
+</html>
