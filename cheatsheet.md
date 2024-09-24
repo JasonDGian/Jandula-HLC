@@ -468,3 +468,34 @@ switch (fruta) {
 
 // Salida: "Es una manzana."
 ```
+
+# :pushpin: Bucles y sentencias iterativas.
+## :small_blue_diamond: For
+Un bucle for itera hasta que la condición analizada de como resultado `FALSE`.
+```javascript
+for( i = 0 ; i < 5 ; i++ ){
+// Instrucciones
+}
+```
+## :small_blue_diamond: While
+El bucle While iterará mientras que su expresión sea `TRUE`.
+```javascript
+while( condicion  ){
+// Instrucciones
+// Modificador de condición.
+}
+```
+
+## :small_blue_diamond: Do...While
+Se repite hasta que la condición especificada sea falsa, **con una entrada a ejecución inicial minima**.
+Este bucle consulta el estado de la condición solo después de la primera iteración.
+```javascript
+do {
+
+} while (condición);
+```
+
+
+
+
+
