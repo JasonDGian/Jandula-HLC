@@ -552,7 +552,7 @@ persona.pop();
 persona.length;
 ```
 
-## Generar nuevo array en base a filtro.
+## Filtrar array (generar nuevo array filtrado) - myArray.filter()
 
 **Función callback:** La función callback es una función que se pasa como argumento a otra función.
 - Por cada elemento que la función callback analiza, debe devolver un resultado true o false.
@@ -571,6 +571,28 @@ const pares = numeros.filter(function(valor) {
 const numeros = [1, 2, 3, 4, 5, 6];
 const pares = numeros.filter(valor => valor % 2 === 0);
 ```
+**Ejemplo 2**
+```javascript
+const letras = [ "a", "b", "c", "d", "e", "f" ];
 
+// Crea una nueva constante , es un array.
+// Este array contiene solo los caracteres filtrados.
+// El filtro se aplica mediante una función callback (lambda) que busca la igualdad con la string "a"
+const nuevoLetras = letras.filter( 
+    (letra) => letra == "a" || letra == "b" 
+);
+```
 
+## Mapear array - myArray.map()
+El método `.map()` en JavaScript se utiliza para crear un nuevo array a partir de un array existente, aplicando una función a cada uno de sus elementos. La función que se pasa como argumento se ejecuta para cada elemento del array original, y el resultado de esa función se agrega al nuevo array.
 
+**Características del método `.map()`:**
+- **Inmutabilidad:** No modifica el array original; en su lugar, devuelve un nuevo array.
+- **Longitud:** El nuevo array tendrá la misma longitud que el array original.
+- **Retorno:** Cada elemento del nuevo array es el resultado de la función callback aplicada a cada elemento del array original.
+
+```javascript
+const nuevoArray = arrayOriginal.map((elemento, indice, array) => {
+    // lógica para transformar el elemento
+});
+```
