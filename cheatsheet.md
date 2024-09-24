@@ -597,20 +597,17 @@ const nuevoArray = arrayOriginal.map((elemento, indice, array) => {
 ```
 
 # 📌 Objetos.
-Para crear objetos en Javascript hay dos formas.
-**Objetos vacios o con valores por defecto.**
+Para crear objetos en Javascript hay dos formas.   
+
+## :small_blue_diamond: Objetos vacios o con valores por defecto.
 ```javascript
-var objeto = new Object();
+var objeto = new Object(); // Precisa constructor disponible.
 ```
 
 ```javascript
 var objeto = {}
 ```
 
-**Asignar valores**
-```javascript
-objeto.propiedad = "valor";
-```
 **Objeto literal**
 ```javascript
 var objeto = {
@@ -618,4 +615,81 @@ var objeto = {
     apellido:"apellido"
 }
 ```
+
+## :small_blue_diamond: Acceder a atributos.
+Para acceder a atributos podemos hacerlo de dos maneras.
+```javascript
+objeto.propiedad;
+
+objeto[propiedad];
+```
+
+## :small_blue_diamond: Asignar valores a atributos.
+```javascript
+objeto.propiedad = "valor";
+objeto.propiedad2 = "valor2";
+```
+
+# 📌 Constructores
+Los constructores en JavaScript son funciones especiales que se utilizan para crear objetos. Al invocar un constructor con la palabra clave new, se crea una nueva instancia del objeto definido por ese constructor.
+```javascript
+function ConstructorNombre(param1, param2) {
+    this.propiedad1 = param1;
+    this.propiedad2 = param2;
+    this.metodo = function() {
+        // lógica del método
+    };
+}
+```
+
+# 📌 Clases.
+
+class Coche {
+    constructor(marca, modelo, anio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    }
+
+    describir() {
+        return `Este coche es un ${this.anio} ${this.marca} ${this.modelo}.`;
+    }
+}
+
+
+## :small_blue_diamond: Extendes - Herencia de clases.
+La palabra extens es usada en declaraciones o epresiones de clase para crear una flase hija.
+
+```javascript
+    class Animal {
+        constructor(nombre) {
+        this.nombre=nombre;
+        }
+
+        hablar(){
+        console.log( this.nombre + ' hace ruido' );
+        }
+    }
+
+    class Perro extends Animal {
+        hablar(){
+        console.log(this.nombre + ' ladra');
+        }
+
+    }
+
+    var fido = new Perro("Fido");
+
+    fido.hablar(); // -> "Fido ladra".
+```
+
+# 📌 Función Callback.
+Una función callback es una función que se pasa como argumento a otra función. A menudo, las callbacks se utilizan para continuar con la ejecución de código después de que se haya completado una operación asíncrona.
+Esto permite que el código continúe su ejecución una vez que se haya completado la operación, como en el caso de una solicitud de red o la lectura de un archivo.
+Las callbacks se utilizan para manejar el resultado de una tarea que puede tardar un tiempo indeterminado en completarse. Por ejemplo, se pasa una función callback a métodos como `fetch` o `setTimeout`, que se ejecutan una vez que la tarea asincrónica finaliza, permitiendo que el flujo del programa continúe sin bloquearse.
+
+# 📌 Asincronismo.
+El asincronismo en JavaScript se refiere a la capacidad de ejecutar operaciones de manera no bloqueante, lo que permite que el código siga ejecutándose mientras espera que ciertas tareas, como solicitudes de red o temporizadores, finalicen. Esto se logra a través de callbacks, promesas y la sintaxis async/await, facilitando la gestión de tareas que requieren tiempo sin congelar el hilo principal del programa.
+
+Podemos interpretar el uso de callbacks en funciones asincronas como "Que deseas hacer una vez obtengas el resultado de esta función?"
 
