@@ -513,4 +513,18 @@ return valorRetornado;
 ```
 
 # 📌 Arrays
-Los 
+Los arrays son conjuntos de datos ordenados por posiciones indizadas asociados a una sola variable. Los datos pueden ser de cualquier tipo de dato.  
+Ejemplo:
+
+```javascript
+// Declaración con inicialización.
+var persona = ["Majo", 22, true]; // String, Int , Boolean
+
+// Declaración con constructor (Inicializada vacia).
+var persona = new Array(3);
+
+var persona = new Array("Edad", "Altura", false);
+
+```
+
+## Acceso a datos en array.
