@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        const letras = [ "a", "b", "c", "d", "e", "f" ];
+
+        // Crea una nueva constante , es un array.
+        // Este array contiene solo los caracteres filtrados.
+        // El filtro se aplica mediante una función lambda que busca la igualdad con la string "a"
+        const nuevoLetras = letras.filter( 
+            (letra) => letra == "a" || letra == "b" 
+        );
+
+        
+
+        for( i = 0 ; i < letras.length ; i++ ){
+            
+            console.log(letras[i]);
+
+        }
+
+        console.log("Nuevas letras de aqui en adelante");
+
+        for( i = 0 ; i < letras.length ; i++ ){
+            
+            console.log(nuevoLetras[i]);
+
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
