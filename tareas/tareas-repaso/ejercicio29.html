@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        var cadenas = ["lorem", "ipsum", "dolor", "sit", "amet"];
+
+        // OPTIMIZAR GUARRADA. 
+        var nuevoArray = cadenas.filter((cadena) => 
+        cadena.toLowerCase().startsWith("a") || 
+        cadena.toLowerCase().startsWith("e") || 
+        cadena.toLowerCase().startsWith("i") || 
+        cadena.toLowerCase().startsWith("o") || 
+        cadena.toLowerCase().startsWith("u")); 
+        
+        for ( i = 0 ; i < nuevoArray.length ; i++ ){
+            console.log(nuevoArray[i]);
+        }
+        
+    </script>
+
+</head>
+<body>
+    <p>29. Aplica filter() a un array de strings para seleccionar aquellos que comienzan con una vocal.</p>
+</body>
+</html>

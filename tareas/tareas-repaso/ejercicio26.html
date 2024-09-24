@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        var arrayOriginal = [null, 0, false, 8, 130, 44];
+
+        var nuevoArray = arrayOriginal.filter((element) => element !== false && element !== null); 
+        // Incluyo valores nulos debido a su naturaleza Falsy.
+
+        for ( i = 0 ; i < nuevoArray.length ; i++ ){
+
+            console.log(nuevoArray[i]);
+            
+        }
+        
+        
+    </script>
+
+</head>
+<body>
+    <p>26. Escribe una función que filtre todos los valores falsos de un array.</p>
+</body>
+</html>

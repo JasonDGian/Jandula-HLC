@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        class Moto {
+
+            constructor (nombreP, cilindradaP) {
+                this.nombre = nombreP;
+                this.cilindrada = cilindradaP;
+            }
+        }
+
+        var moto1 = new Moto("Bimota Tesi Tesi 1/D 400J",400);
+        var moto2 = new Moto("Harley Davidson Panhead 1952",1000);
+        var moto3 = new Moto("Garelli Super Sport",50);
+
+        var arrayMotos = [moto1, moto2, moto3];
+
+        var nuevoArray = arrayMotos.filter((moto) => moto.cilindrada > 50 ); 
+
+        for ( i = 0 ; i < nuevoArray.length ; i++ ){
+
+            console.log(nuevoArray[i].nombre);
+            
+        }
+        
+        
+    </script>
+
+</head>
+<body>
+    <p>27. Usa filter() para extraer objetos con un valor de propiedad específico de un array de objetos.</p>
+</body>
+</html>
