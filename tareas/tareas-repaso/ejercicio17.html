@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        let variableNoDeclarada = null;
+        let variableDeclarada = true;
+
+        function compruebaEstricto( valor )
+            {
+                return valor === true ? "Es verdadero" : "Es falso";;
+            }
+
+        alert( compruebaEstricto(variableNoDeclarada) ); // Debe dar falso, ya que nulos y no definidos son "Falsy".
+
+        alert( compruebaEstricto(variableDeclarada) ); // Debe dar true.
+
+        variableDeclarada = false;
+
+        alert( compruebaEstricto(variableDeclarada) ); // Debe dar false.
+
+    </script>
+
+</head>
+<body>
+    <p>17. Escribe una función que compruebe si un valor es verdadero o falso.</p>
+</body>
+</html>

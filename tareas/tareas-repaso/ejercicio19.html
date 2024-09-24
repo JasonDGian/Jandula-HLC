@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        const contador = 5;
+
+        function cuentaFor(contador){
+            console.log("Cuenta con FOR");
+
+            for ( i = contador ; i > 0 ; i-- ){
+                console.log(i);
+            }
+
+        }
+
+        function cuentaWhile(contador){
+            console.log("Cuenta con While");
+            while ( contador > 0 ) {
+
+                console.log(contador);
+                contador--;
+            }
+        }
+
+        function cuentaDoWhile(contador){
+            console.log("Cuenta con Do While");
+            do{
+                console.log(contador);
+                contador--;
+            } while ( contador > 0 ) 
+        }
+
+        cuentaFor(contador);
+        cuentaWhile(contador);
+        cuentaDoWhile(contador);
+        
+    </script>
+
+</head>
+<body>
+    <p>19. Crea bucles for, while y do while para contar hacia atrás desde 5 hasta 0.</p>
+</body>
+</html>
