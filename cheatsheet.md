@@ -527,4 +527,50 @@ var persona = new Array("Edad", "Altura", false);
 
 ```
 
-## Acceso a datos en array.
+## Leer a datos en array.
+```javascript
+persona[1] // devuelve el elemento en index 1 (segunda poscion)
+```
+
+## Añadir elemento al array : Insertar al final.
+```javascript
+persona.push("valor1","valor2","valor3"...);
+```
+
+## Añadir elemento al array : Insertar al inicio.
+```javascript
+persona.unshift("valor1","valor2","valor3"...);
+```
+
+## Eliminar ultimo elemento.
+```javascript
+persona.pop();
+```
+
+## Consultar longitud array.
+```javascript
+persona.length;
+```
+
+## Generar nuevo array en base a filtro.
+
+**Función callback:** La función callback es una función que se pasa como argumento a otra función.
+- Por cada elemento que la función callback analiza, debe devolver un resultado true o false.
+- Dependiendo del resultado de la función callback, los elementos serán añadidos u omitidos en el nuevo array.
+
+**Ejemplo "largo":**
+```javascript
+const numeros = [1, 2, 3, 4, 5, 6];
+const pares = numeros.filter(function(valor) {
+    return (valor % 2) === 0;
+});
+```
+
+**Ejemplo lambda:**
+```javascript
+const numeros = [1, 2, 3, 4, 5, 6];
+const pares = numeros.filter(valor => valor % 2 === 0);
+```
+
+
+
