@@ -7,12 +7,11 @@
 
     <script>    
 
-       
 
     </script>
 
 </head>
 <body>
-    <p>43. Crea una Promesa que se resuelva con un mensaje de saludo, usando .then() para manejar el valor resuelto de una Promesa.</p>
+    <p>54. Discute las ventajas de usar async/await sobre Promesas.</p>
 </body>
 </html>

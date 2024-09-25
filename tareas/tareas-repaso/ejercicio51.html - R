@@ -7,16 +7,11 @@
 
     <script>    
 
-        var persona = { };
-
-        persona.edad=20;
-        persona.nombre="Julián";
-
 
     </script>
 
 </head>
 <body>
-    <p>37. Crea un objeto vacío y agrega propiedades dinámicamente.</p>
+    <p>51. Convierte una cadena de Promesas para usar async/await.</p>
 </body>
 </html>

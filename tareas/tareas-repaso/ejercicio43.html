@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        // Definición de la promesa.
+        const miPromesa = new Promise((resolver, rechazar) => {
+            const hecho = true; // Variable que determina el estado de la operación.
+
+            // Verificamos si la operación fue exitosa.
+            if (hecho) {
+                // Llamamos a la función de resolución si la operación fue exitosa.
+                resolver("Éxito"); // Se pasa un valor al resolver.
+            } else {
+                // Llamamos a la función de rechazo si hubo un error en la operación.
+                rechazar("Error"); // Se pasa un mensaje de error.
+            }
+        });
+
+        // Consumición de la promesa.
+        miPromesa
+            // Si la operación tiene éxito, se ejecuta esta función.
+            .then( ( devueltoPorResolver ) => {
+                console.log(devueltoPorResolver); // Imprime el valor de éxito en la consola.
+            })
+            // Si encuentra un error, se ejecuta esta función.
+            .catch(devueltoPorRechazar => {
+                console.log(devueltoPorRechazar); // Imprime el mensaje de error en la consola.
+            })
+            // En cualquier caso, sea éxito o fallo, se ejecuta esta función.
+            .finally(() => {
+                console.log("Done"); // Indica que el proceso ha terminado.
+            });
+
+
+            // Nota, no es necesario llamar a las funciones RESOLVE y REJECT por narices, 
+            // pero es una convención que permite aumentar la legibilidad del código y conviente usarlas.
+
+            const saludoP = new Promise( (resolve, reject) => {
+
+                mensaje = "Hola, ¿qué tal?"
+                resolve(mensaje);
+
+            } );
+
+
+            saludoP.then( devueltoPorResolve => console.log(devueltoPorResolve) );
+
+
+    </script>
+
+</head>
+<body>
+    <p>43. Crea una Promesa que se resuelva con un mensaje de saludo, usando .then() para manejar el valor resuelto de una Promesa.</p>
+</body>
+</html>

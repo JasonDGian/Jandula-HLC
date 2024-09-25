@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <script>    
+    <script>
 
-       
+      // Definición cuerpo promesa.
+      const miProm = new Promise(function (resolve, reject) {
+
+        var exito = true // simulación de resultado de función asincrona.
+
+        if (exito) {
+          resolve(
+            // Bloque de código que la promesa devuelve si tiene exito.
+            console.log('Hola')
+          );
+        } else {
+            // Bloque de código que la promesa devuelve si falla.
+          reject('Oopsie.');
+        }
+      });
+
+      // Uso de la promesa especificando instrucciones.
+      miProm
+        .then(function funcionSiExito(codigoDevueltoPorPromesa) {
+          // Ejecutado en primer then.
+          return 'donelydone' // -> Este return alimenta la callback del proximo .then()
+        })
+        .then(function despuesDeThen(devueltoPorPrimerThen) {
+          // Ejecutado en segundo then.
+          console.log(devueltoPorPrimerThen)
+        })
 
     </script>
 
-</head>
-<body>
-    <p></p>
-</body>
+  </head>
+  <body>
+    <p>44. Encadena múltiples llamadas .then() en una Promesa.</p>
+  </body>
 </html>

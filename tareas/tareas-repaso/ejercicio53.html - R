@@ -7,16 +7,11 @@
 
     <script>    
 
-        var persona = { };
-
-        persona.edad=20;
-        persona.nombre="Julián";
-
 
     </script>
 
 </head>
 <body>
-    <p>37. Crea un objeto vacío y agrega propiedades dinámicamente.</p>
+    <p>53. Explica qué sucede si usas await fuera de una función async.</p>
 </body>
 </html>

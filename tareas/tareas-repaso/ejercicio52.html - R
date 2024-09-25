@@ -12,6 +12,6 @@
 
 </head>
 <body>
-    <p>35. Agrega un método a un objeto que devuelva un mensaje de saludo.</p>
+    <p>52. Maneja errores en una función async usando try...catch.</p>
 </body>
 </html>

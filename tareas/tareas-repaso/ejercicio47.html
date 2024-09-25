@@ -7,16 +7,13 @@
 
     <script>    
 
-        // Promise.all() sirve para realizar multiples funciones asincronas 
-        // simultaneamente y esperar al resultado de todas ellas antes de continuar..
-
         const prom1 = new Promise(
             function ( resolve, reject ) {
 
                 var verdadero = true;
 
                 if (verdadero) {
-                    resolve("Prom 1 exito");
+                    setTimeout( resolve, 3000, "Prom 1 exito");
                 }
                 else {
                     reject("Prom 1 error");
@@ -43,10 +40,10 @@
         const prom3 = new Promise(
             function ( resolve, reject ) {
 
-                var verdadero = true;
+                var verdadero = false;
 
                 if (verdadero) {
-                    resolve("Prom 3 exito");
+                    setTimeout( resolve, 2000, "Prom 3 exito");
                 }
                 else {
                     reject("Prom 3 error");
@@ -55,9 +52,10 @@
             }
         );
 
-        Promise.all([prom1, prom2, prom3])
-        .then(resultados => {
-        console.log(resultados); // Un array de valores resueltos
+
+        Promise.race([prom1, prom2, prom3])
+        .then( primerResultadoDevuelto => {
+        console.log(primerResultadoDevuelto); // Recibe el resultado de la primera promesa que ha sido resuelta.
         })
         .catch(error => {
         console.error(error); // Si alguna de las promesas encuentra fallo, lo atrapará sin pasar por el .then().
@@ -67,7 +65,6 @@
 
 </head>
 <body>
-    <p>46. Crea un ejemplo con Promise.all para ejecutar múltiples Promesas en paralelo,
-        explicando qué sucede si una de las Promesas en Promise.all se rechaza.</p>
+    <p>47. Crea un ejemplo con Promise.race para simular un tiempo de espera para una llamada a una API.</p>
 </body>
 </html>

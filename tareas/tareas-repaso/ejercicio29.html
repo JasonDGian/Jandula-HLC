@@ -9,13 +9,17 @@
 
         var cadenas = ["lorem", "ipsum", "dolor", "sit", "amet"];
 
-        // OPTIMIZAR GUARRADA. 
-        var nuevoArray = cadenas.filter((cadena) => 
-        cadena.toLowerCase().startsWith("a") || 
-        cadena.toLowerCase().startsWith("e") || 
-        cadena.toLowerCase().startsWith("i") || 
-        cadena.toLowerCase().startsWith("o") || 
-        cadena.toLowerCase().startsWith("u")); 
+        // OPTIMIZAR ESTA GUARRADA. 
+        // var nuevoArray = cadenas.filter((cadena) => 
+        // cadena.toLowerCase().startsWith("a") || 
+        // cadena.toLowerCase().startsWith("e") || 
+        // cadena.toLowerCase().startsWith("i") || 
+        // cadena.toLowerCase().startsWith("o") || 
+        // cadena.toLowerCase().startsWith("u")); 
+
+        
+        // Optimizado ? 
+        var nuevoArray = cadenas.filter( (elemento) => "aeiou".includes( elemento[0].toLowerCase() ) )
         
         for ( i = 0 ; i < nuevoArray.length ; i++ ){
             console.log(nuevoArray[i]);
