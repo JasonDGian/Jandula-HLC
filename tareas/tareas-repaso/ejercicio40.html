@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        class Persona {
+            constructor( nombre, edad ){
+                this.nombre=nombre;
+                this.edad=edad;
+            }
+
+            saludo(){
+                console.log("Hola, me llamo " + this.nombre)
+            }
+
+        }
+
+        var p1 = new Persona();
+
+        p1.nombre = "Jesus";
+        p1["edad"] = 20; // Importante no olvidar las comillas al referirse al nombre del campo.
+
+
+        // introducimos esto en la consola -> p1.saludo();
+
+    </script>
+
+</head>
+<body>
+    <p>40. Define una clase con un constructor que inicialice propiedades, crea una instancia de la misma y agrega un método a la clase, accediendo al mismo desde consola.</p>
+</body>
+</html>
