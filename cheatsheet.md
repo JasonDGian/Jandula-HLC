@@ -824,3 +824,66 @@ Si todas las promesas se realizan con éxito se lanza el código deseado, si aun
     </script>
 ```
 
+# 📍📍 Promesas.race() .
+El metodo Promise.race() devuelve el primer resultado obtenido.
+
+```javascript
+    <script>    
+
+        const prom1 = new Promise(
+            function ( resolve, reject ) {
+
+                var verdadero = true;
+
+                if (verdadero) {
+                    setTimeout( resolve, 3000, "Prom 1 exito");
+                }
+                else {
+                    reject("Prom 1 error");
+                }
+
+            }
+        );
+
+        const prom2 = new Promise(
+            function ( resolve, reject ) {
+
+                var verdadero = true;
+
+                if (verdadero) {
+                    resolve("Prom 2 exito");
+                }
+                else {
+                    reject("Prom 2 error");
+                }
+
+            }
+        );
+
+        const prom3 = new Promise(
+            function ( resolve, reject ) {
+
+                var verdadero = false;
+
+                if (verdadero) {
+                    setTimeout( resolve, 2000, "Prom 3 exito");
+                }
+                else {
+                    reject("Prom 3 error");
+                }
+
+            }
+        );
+
+
+        Promise.race([prom1, prom2, prom3])
+        .then( primerResultadoDevuelto => {
+        console.log(primerResultadoDevuelto); // Recibe el resultado de la primera promesa que ha sido resuelta.
+        })
+        .catch(error => {
+        console.error(error); // Si la primera función en hacer Settling lo hace encontrando un error será atrapado.
+        // Si la primera función en hacer settling no encuentra error entonces este catch no saltará.
+        });
+
+    </script>
+```
