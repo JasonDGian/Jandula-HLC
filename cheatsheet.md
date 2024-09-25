@@ -693,3 +693,32 @@ El asincronismo en JavaScript se refiere a la capacidad de ejecutar operaciones 
 
 Podemos interpretar el uso de callbacks en funciones asincronas como "Que deseas hacer una vez obtengas el resultado de esta función?"
 
+# 📍 Promesas o Futuros
+```javascript
+// Creación de una nueva promesa
+const miPromesa = new Promise((resolver, rechazar) => {
+
+    // Simulación de una operación asíncrona
+    const exito = true; // Cambia a false para simular un error -> Esto simula una llamada a un servidor o lo que sea que puede devoler un estado de exito o de fallo.
+
+    if (exito) {
+        // Aquí iria el bloque de codigo en caso de llamada exitosa al servicio o lo que sea.
+        resolver("Operación exitosa"); // Resuelve la promesa
+    } else {
+        // Aquí iria el bloque de codigo en caso de llamada fallida.
+        rechazar("Ocurrió un error"); // Rechaza la promesa
+    }
+});
+
+// Consumición de la promesa
+miPromesa
+    .then((valor) => {
+        console.log(valor); // Maneja el resultado exitoso
+    })
+    .catch((error) => {
+        console.log(error); // Maneja el error
+    })
+    .finally(() => {
+        console.log("Proceso terminado"); // Se ejecuta siempre al final
+    });
+```
