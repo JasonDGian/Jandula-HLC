@@ -725,7 +725,7 @@ miPromesa
 # 📍📍 Promesas o Futuros encadenados.
 ![imagen](https://github.com/user-attachments/assets/b911c705-d70f-4edf-8252-5dc99e1b4b5b)
 
-as llamadas a promesas se encadenan utilizando el método `.then()`. Cuando una promesa se resuelve, el valor devuelto se pasa al siguiente `.then()`
+Las llamadas a promesas se encadenan utilizando el método `.then()`. Cuando una promesa se resuelve, el valor devuelto se pasa al siguiente `.then()`
 ```javascript
 const promesaUno = new Promise((resolver) => {
     setTimeout(() => {
@@ -754,3 +754,73 @@ promesaUno
         console.error("Error:", error); // Manejo de errores
     });
 ```
+
+# 📍📍 Promesas.all() .
+Promise.all() sirve para realizar multiples funciones asincronas simultaneamente y esperar al resultado de todas ellas antes de continuar.
+Si todas las promesas se realizan con éxito se lanza el código deseado, si aunque sea solo una de ellas encuentra error se capturará en el `.catch()` sin pasar por el `.then()`.
+![imagen](https://github.com/user-attachments/assets/ea744b92-66d7-471d-860c-3e316af11bf8)
+
+```javascript
+    <script>    
+
+        // Promise.all() sirve para realizar multiples funciones asincronas 
+        // simultaneamente y esperar al resultado de todas ellas antes de continuar..
+
+        const prom1 = new Promise(
+            function ( resolve, reject ) {
+
+                var verdadero = true;
+
+                if (verdadero) {
+                    resolve("Prom 1 exito");
+                }
+                else {
+                    reject("Prom 1 error");
+                }
+
+            }
+        );
+
+        const prom2 = new Promise(
+            function ( resolve, reject ) {
+
+                var verdadero = true;
+
+                if (verdadero) {
+                    resolve("Prom 2 exito");
+                }
+                else {
+                    reject("Prom 2 error");
+                }
+
+            }
+        );
+
+        const prom3 = new Promise(
+            function ( resolve, reject ) {
+
+                var verdadero = true;
+
+                if (verdadero) {
+                    resolve("Prom 3 exito");
+                }
+                else {
+                    reject("Prom 3 error");
+                }
+
+            }
+        );
+
+       
+
+        Promise.all([prom1, prom2, prom3])
+        .then(resultados => {
+        console.log(resultados); // Un array de valores resueltos
+        })
+        .catch(error => {
+        console.error(error); // Si alguna de las promesas encuentra fallo, lo atrapará sin pasar por el .then().
+        });
+
+    </script>
+```
+
