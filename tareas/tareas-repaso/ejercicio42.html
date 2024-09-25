@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>    
+
+        class Persona {
+            constructor( nombre, edad ){
+                this.nombre=nombre;
+                this.edad=edad;
+            }
+
+            saludo(){
+                console.log("Hola, me llamo " + this.nombre)
+            }
+
+        }
+
+        class Alumno extends Persona{
+
+            constructor( nombre, edad ){
+                super( nombre, edad);
+            }
+
+            saludo(){
+                
+                super.saludo();
+
+                setTimeout( () => {
+                    
+                    console.log("Soy un alumno!");
+
+                }, 2000);
+            }
+
+        }
+
+        var p1 = new Alumno("Jesus", 21);
+
+        p1.saludo();
+
+    </script>
+
+</head>
+<body>
+    <p>42. Usa setTimeout para retrasar un mensaje por 2 segundos.</p>
+</body>
+</html>

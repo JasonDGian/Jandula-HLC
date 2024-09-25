@@ -19,20 +19,29 @@
 
         }
 
-        var p1 = new Persona();
+        class Alumno extends Persona{
 
-        p1.nombre = "Jesus";
-        p1["edad"] = 20; // Importante no olvidar las comillas al referirse al nombre del campo.
+            constructor( nombre, edad ){
+                super( nombre, edad);
+            }
 
+            saludo(){
 
-        // introducimos esto en la consola -> p1.saludo();
-        
+                super.saludo();
+
+                console.log("Soy un alumno!");
+            }
+
+        }
+
+        var p1 = new Alumno("Jesus", 21);
+
+        p1.saludo();
 
     </script>
 
 </head>
 <body>
-    <p>40. Define una clase con un constructor que inicialice propiedades, crea una instancia de la misma y agrega un método a la clase, accediendo al mismo desde consola.</p>
-    <img src="./capturas/2024-09-25_07-09.png">
+    <p>41. Crea una clase con herencia, sobreescribiendo un método de la clase padre. Usa super para llamar al constructor del padre.</p>
 </body>
 </html>
