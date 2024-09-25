@@ -723,6 +723,8 @@ miPromesa
     });
 ```
 # 📍📍 Promesas o Futuros encadenados.
+![imagen](https://github.com/user-attachments/assets/b911c705-d70f-4edf-8252-5dc99e1b4b5b)
+
 as llamadas a promesas se encadenan utilizando el método `.then()`. Cuando una promesa se resuelve, el valor devuelto se pasa al siguiente `.then()`
 ```javascript
 const promesaUno = new Promise((resolver) => {
