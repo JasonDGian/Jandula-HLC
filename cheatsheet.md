@@ -887,3 +887,7 @@ El metodo Promise.race() devuelve el primer resultado obtenido.
 
     </script>
 ```
+
+
+# 📍📍 Funciones asincronas - async function.
+Las funciones
